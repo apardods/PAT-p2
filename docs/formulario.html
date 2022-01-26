@@ -5,24 +5,26 @@
 	<meta charset="utf-8">
 </head>
 <body>
-	<h1>Bienvenido al formulario de inscripcion para el plan de ahorro de Iberdrola</h1>
-	<h3>Descubre nuestros planes de luz y gas según horas</h3>
-	<>
-	<table>
-		<thead>
-			<tr>
-				<th>Hora Valle</th>
-				<th>Hora Punta</th>th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<th>0.3830 €/kWh</th>
-				<th>0.3496 €/kWh</th>
-			</tr>
-		</tbody>
-	</table>
-	<p>Si estás interesado, pulsa en el siguiente <a href="url">form.html enlace</a></p>
-
+    <h1>Iberdrola</h1>
+    <img src="https://www.iberdrola.com/o/iberdrola-corporativo-theme/images/comunes/logo_cabecera_stiky.png">
+	<h3>Bienvenido al formulario de inscripcion para el plan de ahorro de Iberdrola</h3>
+    <form action="/signup" method="post">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Correo electrónico:</label>
+        <input type="text" id="email" name="email"><br><br>
+        <label for="phone">Teléfono:</label>
+        <input type="text" id="phone" name="phone"><br><br>
+        <label for="plan">Plan que le interesa:</label>
+        <select name="select">
+        <option value="value1" selected="">Plan de ahorro dos tramos</option>
+        <option value="value2">Plan de ahorro tres tramos</option>
+        <option value="value3">Plan elige 8 horas</option>
+        </select><br><br>
+        <label for="identification">Identification:</label>
+        <input type="text" id="identification" name="identification"
+        <button type="submit">Submit</button>
+    </form>
+	
 </body>
 </html>
